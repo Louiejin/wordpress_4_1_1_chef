@@ -13,24 +13,25 @@
  *
  * @package WordPress
  */
-
-define('WP_REDIS_HOST', '');
+//redis cluster host
+define('WP_REDIS_HOST', 'rchanzihybrid-001.e2bij6.0001.apne1.cache.amazonaws.com');
+//define('WP_REDIS_HOST', '');
  
 define('WP_HOME','');
 define('WP_SITEURL','');
 
 // ** MySQL settings - You can get this info from your web host ** //
 /** The name of the database for WordPress */
-define('DB_NAME', 'wordpress');
+define('DB_NAME', 'cjelsHanziHybridDb');
 
 /** MySQL database username */
-define('DB_USER', 'wordpress');
+define('DB_USER', 'cjelsHanziHybrid');
 
 /** MySQL database password */
-define('DB_PASSWORD', 'wordpress');
+define('DB_PASSWORD', 'cjelsHanziHybridPassMaster');
 
 /** MySQL hostname */
-define('DB_HOST', '');
+define('DB_HOST', 'cjelshanzihybriddb-id.cyqivq3t7fxr.ap-northeast-1.rds.amazonaws.com');
 
 /** Database Charset to use in creating database tables. */
 define('DB_CHARSET', 'utf8');
@@ -73,7 +74,10 @@ $table_prefix  = 'wp_';
  * It is strongly recommended that plugin and theme developers use WP_DEBUG
  * in their development environments.
  */
-define('WP_DEBUG', false);
+//define('WP_DEBUG', false);
+define('WP_DEBUG', true);
+define('WP_DEBUG_LOG', true);
+//define('WP_DEBUG_DISPLAY', false); 
 
 /* That's all, stop editing! Happy blogging. */
 
